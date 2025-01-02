@@ -20,6 +20,7 @@ mongoose.set('strictQuery', false); // or true, depending on your preference
 mongoose
   .connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
+    socketTimeoutMS: 30000,
     useUnifiedTopology: true,
   })
   .then(() => {
