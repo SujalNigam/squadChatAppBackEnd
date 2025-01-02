@@ -37,7 +37,8 @@ const server = app.listen(port, () =>
 );
 const io = socket(server, {
   cors: {
-    origin: "http://localhost:3000",
+    // origin: "http://localhost:3000",
+    origin: "https://frolicking-halva-484bbc.netlify.app/",
     credentials: true,
   },
 });
