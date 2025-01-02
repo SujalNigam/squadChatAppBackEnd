@@ -10,6 +10,9 @@ const port = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(express.json());
+
+mongoose.set('strictQuery', false); // or true, depending on your preference
+
 // const url ='mongodb://0.0.0.0:27017';
 
 // url = "mongodb+srv://sujalnigam2003:@L0fGdIL3BbyGcUSx.mongodb.net/chatdum?retryWrites=true&w=majority";
